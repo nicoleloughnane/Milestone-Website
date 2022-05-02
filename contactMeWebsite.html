@@ -1,0 +1,131 @@
+<!--Nicole Loughnane-->
+<!--CST 120-->
+<!--12/19/21-->
+<!--W3 Schools: How TO: Toggle between light and dark mode-->
+<!--https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website: Contact Me</title>
+    <!--Using CSS Style sheet here-->
+    <link rel="stylesheet" type="text/css" href="css/myWebsite.css">
+    <!--Reference JavaScript script-->
+    <script src="javascript/myJavascriptFile.js"></script>
+    <!--jQuery and Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!--Responsive website - mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        /*Override bootstrap */
+        a {
+    font-family: Georgia;
+    color: #E05D5D;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+    }
+    body {
+    font-family: Georgia;
+    font-size: 18px;
+    margin: 16px 0 24px;
+    animation: slide 3s;
+
+    margin-top:20px; 
+    margin-left:20px; 
+    background:#FFF8E5;
+    }
+    </style>
+</head>
+
+<body>
+    <!--This is the nav bar which utilizes bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #6F69AC">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="homeWebsite.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="aboutMeWebsite.html">About Me</a>
+            <a class="nav-item nav-link" href="thingsToShareWebsite.html">Things to Share</a>
+            <a class="nav-item nav-link" href="contactMeWebsite.html">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+<hr>
+    <div id="Welcome Information" align = "center">
+        <!--Welcome to Contact Me Header-->
+        <h1> Contact Me </h1>
+    </div>
+
+    <!--Contact me form-->
+    <div id="Contact Me" class= "container" align = "center">
+        <form method="post" action="https://postman-echo.com/post">
+            <!--User enters in their name-->
+            <div class="form-group row">
+                <label for="yourname" class="col-sm-2 col-form-label">Your Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="yourname" name="yourname"><br />
+                </div>
+            </div>
+            <!--User enters in their email-->
+            <div class="form-group row">
+                <label for="youremail" class="col-sm-2 col-form-label">Your Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="youremail" name="youremail"><br />
+                </div>
+            </div>
+            <!--User enters in their subject of message-->
+            <div class="form-group row">
+              <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="subject" name="subject"><br />
+              </div>
+          </div>
+          <!--User enters in their message-->
+          <div class="form-group row">
+            <label for="message" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-10">
+                <textarea id="message" name="message" rows="6" cols="80"></textarea><br/>
+            </div>
+        </div>
+        <!--User presses the submit button for their message-->
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <div id="Contact Information" align = "center">
+
+        <h2>My Contact Information</h2>
+
+        <h3>Discord</h3>
+        <!--Image source: icons8.com-->
+        <img src="images/discordIcon.PNG" alt="Discord logo" width="100" height="100">
+        <h6>Image sourced from icons8.com</h6>
+        <h3>nicolelikesdogs#0613</h3>
+        
+    </div>
+
+    <hr>
+    <a href="homeWebsite.html">Go back to home page</a>
+    <p></p>
+    <button onclick = "javascript:darkMode()">Toggle Dark Mode On/Off</button>
+
+</body>
+
+</html>

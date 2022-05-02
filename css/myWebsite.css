@@ -1,0 +1,155 @@
+/*This specifies the different font colors and sizes for the header tags */
+h1 {color:#00A19D; font-family: Georgia; font-weight:bold; font-size:32px; margin:0 0 16px;}
+h2 {color:#6F69AC; font-family: Georgia; font-weight:bold; font-size:28px; margin:0 0 8px;}
+h3 {color:#00A19D; font-family: Georgia; font-weight:bold; font-size:20px; margin:0 0 8px;}
+h4 {color:#C36839; font-family: Georgia; font-weight:bold; font-size:16px; margin:0 0 8px;}
+h6 {color:#C36839; font-family: Georgia; font-weight:bold; font-size:12px; margin:0 0 8px;}
+li {color:#000000; font-family: Georgia; font-size: 16px; margin: 0 0 8px;}
+
+/*This specifies font and color for paragraphs*/
+/*This also creates a sliding animation for the body */
+body {
+  font-family: Georgia;
+  font-size: 18px;
+  margin: 16px 0 24px;
+  animation: slide 3s;
+
+  margin-top:20px; 
+  margin-left:20px; 
+  background:#FFF8E5;
+}
+  @keyframes slide {
+  from {
+  margin-left: 100%;
+  }
+}
+
+/*This will be used to change the body to dark mode*/
+.dark-mode{
+  background: #000000;
+  color: #FFF8E5;
+  
+}
+
+/*This specifies font, color, boldness for links to other pages or an external site */
+a {
+    font-family: Georgia;
+    color: #E05D5D;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+}
+
+/*This is for the title drop down menu/summary */
+summary {color:#6F69AC; font-family: Georgia; font-size: 18px;}
+
+/*This specifies how tables will look throughout the website */
+#table-design-for-site{
+  border-collapse: separate;
+}
+/*Table cell design */
+#table-design-for-site th, td {
+  border: 1px solid black;
+  font-family: Georgia;
+  font-size: 20px;
+}
+/*The header cell design */
+#table-design-for-site th {
+  color: #FFFFFF;
+  background-color: #6F69AC;
+}
+
+/*This is for the description list*/
+dt {color:#00A19D; font-family: Georgia; font-weight:bold; font-size: 18px;}
+
+/*This is for the quotes on my About Me page, it handles the type, quotation, source, and button */
+#type {
+  font-family: 'Georgia', sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  text-indent: 4vmin;
+  text-align: center;
+  color:#00A19D;
+}
+
+#quotation {
+  font-family: 'Georgia', script;
+  font-size: 20pt;
+  color:#6F69AC;
+  line-height: 1.2;
+  hanging-punctuation: first;
+}
+
+#source {
+  font-family: 'Georgia', sans-serif;
+  font-weight: bold;
+  font-size: 4vmin;
+  font-size: 16pt;
+  text-indent: 4vmin;
+  text-align: right;
+  color: #00A19D;
+}
+
+button {
+  font-family: 'Georgia', sans-serif;
+  display: block;
+  padding: .5rem;
+  outline: none;
+  font-size: 10pt;
+  color:black;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+/*This is a responsive flexbox for the image gallery*/
+    /*w3 schools*/
+    * {
+      box-sizing: border-box;
+    }
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap:wrap;
+      padding: 0 4px;
+    }
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    
+    /*this is for the description of the image */
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    
+
+   

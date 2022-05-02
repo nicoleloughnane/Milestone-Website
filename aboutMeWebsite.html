@@ -1,0 +1,196 @@
+<!--Nicole Loughnane-->
+<!--CST 120-->
+<!--12/19/21-->
+<!--W3 Schools: How TO: Toggle between light and dark mode-->
+<!--https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website: About Me</title>
+    <!--Using CSS Style sheet here-->
+    <link rel="stylesheet" type="text/css" href="css/myWebsite.css">
+    <!--Reference JavaScript script-->
+    <script src="javascript/myJavascriptFile.js"></script>
+    <!--jQuery and Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!--Responsive website - mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        /*Override bootstrap */
+        a {
+    font-family: Georgia;
+    color: #E05D5D;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+    }
+    body {
+    font-family: Georgia;
+    font-size: 18px;
+    margin: 16px 0 24px;
+    animation: slide 3s;
+
+    margin-top:20px; 
+    margin-left:20px; 
+    background:#FFF8E5;
+    }
+    /*This is for the bootstrap border */
+    .box {
+        height: 350px;
+        width: 350px;
+        margin: 100px;
+    }
+    </style>
+</head>
+
+<body onload="getAllQuotes();getNextQuote()">
+
+    <!--This is the nav bar which utilizes bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #6F69AC">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="homeWebsite.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="aboutMeWebsite.html">About Me</a>
+            <a class="nav-item nav-link" href="thingsToShareWebsite.html">Things to Share</a>
+            <a class="nav-item nav-link" href="contactMeWebsite.html">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+<hr>
+
+    <!--Welcome to about me-->
+    <h1 align="center"> About Me </h1>
+    <hr>
+    <div id="My Favorite Things" class = "container" align="center">
+        <h2>My Favorite Things</h2>
+        <!--This is a description list of my favorite things-->
+        <div class = "box border border-info">
+        <dl>
+            <dt>Color:</dt>
+            <dd style="color: blue">- Blue</dd>
+            <dt>Food:</dt>
+            <dd style="color: red">- Pasta</dd>
+            <dt>TV Show:</dt>
+            <dd style="color: purple">- Spongebob</dd>
+            <dt>Movie:</dt>
+            <dd style="color: green">- Jurassic Park</dd>
+            <dt>Band:</dt>
+            <dd>- AJR</dd>
+            
+        </dl>
+        </div>
+    </div>
+    <hr>
+
+    <div id = "My Favorite Quotes"  align = "center">
+        <h2>My Favorite Quotes</h2>
+        <!-- The page elements that contain all of the Quote Information -->
+    <blockquote>
+        
+        <header><p id="type">This is the Type</p></header>
+            <p id="quotation">This is the Quote</p>
+        <footer><p id="source">This is the Source</p></footer>
+    
+    </blockquote>
+
+    <!-- On Button Click Event is used to get the next random Quote and update the page -->
+    <button onclick="getNextQuote()">Next Quote</button>
+    </div>
+
+    <hr>
+
+    <div id="My Hobbies" align="center">
+        <h2> My Hobbies</h2>
+        <!--This is a table of my hobbies/skills-->
+        <table id="table-design-for-site" width="80%" border="i">
+            <!--added thead tags-->
+            <thead>
+                <tr align="center">
+                    <th width="33%">Hobbies</th>
+                    <th width="33%">Year(s)</th>
+                    <th width="33%">Description</th>
+                </tr>
+            </thead>
+            <!--Added tbody tags-->
+            <tbody>
+                <tr">
+                    <td align="center">Art</td>
+                    <td align="center">2003-present</td>
+                    <td align="center">
+                        <p>
+                            I've had an interest in art ever since I was 2 years old.
+                            I started with coloring existing art and then made pieces of my own with crayons and
+                            watercolors.
+                            I took a few art classes in school. Now it is something I do in my free time.
+                            I make holiday and birthday cards for my friends and family.
+                        </p>
+                    </td>
+                    </tr>
+                    <tr">
+                        <td align="center">Guitar</td>
+                        <td align="center">2014-present</td>
+                        <td align="center">
+                            <p>
+                                I learned acoustic guitar when I was in junior high school.
+                                I like to play country, rock, and pop songs.
+                                Even though I have been on and off with the hobby, I was able to learn enough
+                                to start a YouTube channel of some songs I learned, which helps track my progress.
+                                This past summer I even got an electric guitar. You can find my videos on my things to
+                                share page.
+                            </p>
+                        </td>
+                        </tr>
+                        <tr">
+                            <td align="center">Golf</td>
+                            <td align="center">2015-present</td>
+                            <td align="center">
+                                <p>
+                                    Starting my freshman year of high school, I was on the girls golf team.
+                                    I played until my junior year and went to competitions with other schools.
+                                    In my free time I like to go practice and teach my friends how to play.
+                                </p>
+                            </td>
+                            </tr>
+                            <tr">
+                                <td align="center">Computer Programming</td>
+                                <td align="center">2017-present</td>
+                                <td align="center">
+                                    <p>
+                                        My junior year of high school is when I started taking an interest in computer
+                                        science.
+                                        I took some AP classes that year and in senior year which is when I discovered
+                                        what
+                                        I wanted to do.
+                                        I majored in computer science at my community college but transferred to
+                                        software
+                                        development (formerly computer programming)
+                                        at GCU! I have had most experience in Java and C# but am quickly building up
+                                        knowledge in other areas.
+                                    </p>
+                                </td>
+                                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+
+    <a href="homeWebsite.html">Go back to home page</a>
+    <p></p>
+
+    <button onclick = "javascript:darkMode()">Toggle Dark Mode On/Off</button>
+
+</body>
+
+</html>
